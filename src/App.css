@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 5s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.paragraph {
+  animation: fadeIn 0.5s ease-in-out;
+  font-size: large;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.typing-area {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 3px solid #ffffff;  
+  border-radius: 8px;  /* Optional: Rounded corners */
+  font-size: 16px;
+  opacity: 30%;
+  font-family: 'Courier New', Courier, monospace;  /* Monospace font for typing area */
+  outline: none;  /* Removes the default focus outline */
+  resize: none;  /* Prevents the textarea from being resized */
+  box-sizing: border-box;  /* Ensures padding is included in the total width/height */
+  background-color: #242424;
+}
+
+.typing-area:focus {
+  border-color: #2196F3;  /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);  /* Adds a soft blue shadow when focused */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.App {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+
+  gap: 1.5em; /* Adds space between items */
+  padding: 2em; /* Adds padding inside the container */
+  
+  height: 100vh; /* Ensures the container takes up the full viewport height */
+  width: 100%; /* Ensures the container takes up the full width */
+}
+
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
+/* button:hover {
+  border-color: #646cff;
+} */
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

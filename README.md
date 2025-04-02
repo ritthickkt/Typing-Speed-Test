@@ -1,4 +1,5 @@
 # Typing Speed Test
+@https://ritthickkt.github.io/Typing-Speed-Test/
 
 ## Description
 This project is a **Typing Speed Test** web application that allows users to test their typing speed and accuracy in real-time. The app displays a random text for users to type, measures their typing speed (in words per minute), and tracks their accuracy. It provides a clean and engaging interface with a smooth user experience.

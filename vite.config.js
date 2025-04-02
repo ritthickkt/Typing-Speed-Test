@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-})
+  base: "/Typing-Speed-Test",
+});
